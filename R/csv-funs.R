@@ -1,14 +1,19 @@
 # Just to divide messages ----
 
-messageline <- function() {
-  message(rep("-", 60))
+messageline <- function(txt = NULL, width = 80) {
+  if(is.null(txt)) {
+    message(rep("-", width))
+  } else {
+    message(txt, " ", rep("-", width - nchar(txt) - 1))
+  }
 }
 
 # Read gz compressed CSV files ----
 
 fread2 <- function(file, select = NULL, character = NULL, numeric = NULL) {
   messageline()
-  message("function fread2")
+  messageline("function fread2")
+  messageline()
   message("file: ", file)
 
   if (str_sub(file, start = -2) == "gz") {
