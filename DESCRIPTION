@@ -1,0 +1,13 @@
+Package: pachamisc
+Type: Package
+Title: A set of shortcuts for my daily work
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: Mauricio Vargas <mvargas@dcc.uchile.cl>
+Description: Ubuntu-oriented functions to extract zip files,
+    compress csv in gz format and even read csv from gz files.
+    This also works on Windows but needs 7-Zip and GNU tools
+    installed via Chocolatey
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
