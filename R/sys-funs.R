@@ -27,19 +27,7 @@ compress_gz <- function(x) {
 
 # Remove outdated files ----
 
-remove_outdated <- function(x) {
-  try(
-    file.remove(
-      grep(
-        paste(paste0(files_to_remove$year, ".csv.gz"), collapse = "|"),
-        x,
-        value = T
-      )
-    )
-  )
-}
-
-remove_outdated_2 <- function(x,t) {
+remove_outdated <- function(x,t) {
   try(
     file.remove(
       grep(
